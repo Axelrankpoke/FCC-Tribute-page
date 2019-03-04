@@ -1,0 +1,90 @@
+html, body {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+#main
+ {
+  width: 100%;
+  background: white;
+  display: grid;
+  grid-template-columns: 30em auto;
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header"
+    "subtitle subtitle"
+    "image image"
+    "plaque tribute";
+}
+
+#title {
+  grid-area: header;
+  font-size: 50px;
+  margin: 5px;
+}
+
+#subtitle {
+  grid-area: subtitle;
+  font-style: italic; 
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#img-div {
+  width: 100%;
+  grid-area: image;
+  background: rgba(0,0,0,0.13);
+}
+
+#image {
+  max-width: 100%; 
+  display: block; 
+  height: auto;
+  margin: auto;
+}
+
+#img-caption {
+  margin: 15px;
+}
+
+#plaque {
+  grid-area: plaque;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px         rgba(0,0,0,0.23);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
+  max-height: 280px;
+  text-align: left;
+  font-size: 18px;
+}
+
+#plaque_title {
+  font-size: 25px;
+}
+
+#headline {
+  margin-left: 5px;
+}
+
+ul {
+  margin: 5px auto;
+  text-align:left;
+}
+
+li {
+  margin: 10px;
+}
+
+#tribute-info {
+  grid-area: tribute;
+  margin-top: 10px
+}
+
+h2 {
+  text-align: left;
+  margin-left: 35px;
+  font-size: 20px;
+}
